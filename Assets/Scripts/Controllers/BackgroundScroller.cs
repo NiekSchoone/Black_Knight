@@ -15,6 +15,7 @@ public class BackgroundScroller : MonoBehaviour
 	
 	void Update ()
     {
+        //Scrolls the background texture
         _offset += _speed;
         if (_offset > 1.0f)
         {

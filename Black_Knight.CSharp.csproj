@@ -70,7 +70,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Controllers\BackgroundScroller.cs" />
     <Compile Include="Assets\Scripts\Controllers\InteractableSpawner.cs" />
-    <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\EquipmentManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\PointManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

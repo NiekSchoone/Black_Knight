@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManager : MonoBehaviour
+public class PointManager : MonoBehaviour
 {
     private int _points;
 
@@ -9,22 +9,17 @@ public class GameManager : MonoBehaviour
     {
         DontDestroyOnLoad(transform.gameObject);
     }
-	
-	void Update ()
-    {
-	
-	}
-
-    public void IncreasePoints ()
-    {
-
-    }
 
     public int Points
     {
+        //Gets and sets the point value
         get
         {
             return _points;
+        }
+        set
+        {
+            _points = value;
         }
     }
 }

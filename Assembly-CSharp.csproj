@@ -46,9 +46,15 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AttackTest.cs" />
-     <Compile Include="Assets\Scripts\ChangeScene.cs" />
-     <Compile Include="Assets\Scripts\CheckCollision.cs" />
      <Compile Include="Assets\Scripts\CheckForHit.cs" />
+     <Compile Include="Assets\Scripts\Controllers\BackgroundScroller.cs" />
+     <Compile Include="Assets\Scripts\Controllers\InteractableSpawner.cs" />
+     <Compile Include="Assets\Scripts\ItemDropper.cs" />
+     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
+     <Compile Include="Assets\Scripts\Pickup.cs" />
+     <Compile Include="Assets\Scripts\Utilities\CameraShake.cs" />
+     <Compile Include="Assets\Scripts\Utilities\ChangeScene.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

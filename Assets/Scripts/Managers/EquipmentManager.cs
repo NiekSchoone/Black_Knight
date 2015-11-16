@@ -3,9 +3,9 @@ using System.Collections;
 
 public class EquipmentManager : MonoBehaviour
 {
-    private int _currentWeaponLevel;
-    private int _currentTimerLevel;
-    private int _currentPointMultiplierLevel;
+    private int _currentWeaponLevel = 1;
+    private int _currentTimerLevel = 1;
+    private int _currentHealthLevel = 1;
 
 	void Awake ()
     {
@@ -38,16 +38,16 @@ public class EquipmentManager : MonoBehaviour
         }
     }
 
-    public int PointMultiplierLevels
+    public int HealthLevels
     {
         //Gets and sets the weaponLevel
         get
         {
-            return _currentPointMultiplierLevel;
+            return _currentHealthLevel;
         }
         set
         {
-            _currentPointMultiplierLevel = value;
+            _currentHealthLevel = value;
         }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PointManager : MonoBehaviour
 {
-    private int _points;
+    private int _points = 50000;
 
     void Awake ()
     {

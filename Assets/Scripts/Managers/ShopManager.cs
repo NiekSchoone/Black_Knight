@@ -14,15 +14,39 @@ public class ShopManager : MonoBehaviour
         DontDestroyOnLoad(transform.gameObject);
     }
 
-    public void BuyWeapon1 ()
+    public void BuyWeaponUpgrade ()
     {
         //The player can buy the weapon if he has enough points, after which the required points are substracted and the weapon level is upgraded
-        if (_pointManager.Points >= 30)
+        if (_pointManager.Points >= 1000 * _equipmentManager.WeaponLevels && _equipmentManager.WeaponLevels < 5)
         { 
-            _pointManager.Points -= 30;
-            _equipmentManager.WeaponLevels = 1;
+            _pointManager.Points -= 1000 * _equipmentManager.WeaponLevels;
+            _equipmentManager.WeaponLevels++;
         }
         Debug.Log(_pointManager.Points);
         Debug.Log(_equipmentManager.WeaponLevels);
+    }
+
+    public void BuyTimerUpgrade()
+    {
+        //The player can buy the weapon if he has enough points, after which the required points are substracted and the weapon level is upgraded
+        if (_pointManager.Points >= 1000 * _equipmentManager.TimerLevels && _equipmentManager.TimerLevels < 5)
+        {
+            _pointManager.Points -= 1000 * _equipmentManager.TimerLevels;
+            _equipmentManager.TimerLevels++;
+        }
+        Debug.Log(_pointManager.Points);
+        Debug.Log(_equipmentManager.TimerLevels);
+    }
+
+    public void BuyHealthUpgrade()
+    {
+        //The player can buy the weapon if he has enough points, after which the required points are substracted and the weapon level is upgraded
+        if (_pointManager.Points >= 1000 * _equipmentManager.HealthLevels && _equipmentManager.HealthLevels < 5)
+        {
+            _pointManager.Points -= 1000 * _equipmentManager.HealthLevels;
+            _equipmentManager.HealthLevels++;
+        }
+        Debug.Log(_pointManager.Points);
+        Debug.Log(_equipmentManager.HealthLevels);
     }
 }

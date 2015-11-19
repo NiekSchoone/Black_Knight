@@ -51,17 +51,11 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -78,6 +72,7 @@
     <Compile Include="Assets\Scripts\CheckForHit.cs" />
     <Compile Include="Assets\Scripts\Controllers\BackgroundScroller.cs" />
     <Compile Include="Assets\Scripts\Controllers\InteractableSpawner.cs" />
+    <Compile Include="Assets\Scripts\Controllers\ScenerySpawner.cs" />
     <Compile Include="Assets\Scripts\ItemDropper.cs" />
     <Compile Include="Assets\Scripts\Managers\EquipmentManager.cs" />
     <Compile Include="Assets\Scripts\Managers\PointManager.cs" />
@@ -85,6 +80,7 @@
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\Utilities\CameraShake.cs" />
     <Compile Include="Assets\Scripts\Utilities\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\Utilities\CleanSelf.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

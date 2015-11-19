@@ -15,7 +15,7 @@ public class InteractableSpawner : MonoBehaviour
         _interactables = Resources.LoadAll("Prefabs/Interactable/Formations", typeof (Object));
     }
 
-    void Update()
+    void Update ()
     {
         //Spawns an interactable after a randomly determined amount of time, or reduces the spawning timer
         if (_spawning == false && _randomSpawntime == 0)

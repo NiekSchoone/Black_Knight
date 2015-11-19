@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Written by Rob Verhoef
+using UnityEngine;
 using System.Collections;
 
 public class ShopManager : MonoBehaviour
@@ -17,7 +18,7 @@ public class ShopManager : MonoBehaviour
     public void BuyWeaponUpgrade ()
     {
         //The player can buy the weapon if he has enough points, after which the required points are substracted and the weapon level is upgraded
-        if (_pointManager.Points >= 1000 * _equipmentManager.WeaponLevels && _equipmentManager.WeaponLevels < 5)
+        if (_pointManager.Points >= 1000 * _equipmentManager.WeaponLevels && _equipmentManager.WeaponLevels < 6)
         { 
             _pointManager.Points -= 1000 * _equipmentManager.WeaponLevels;
             _equipmentManager.WeaponLevels++;
@@ -26,10 +27,10 @@ public class ShopManager : MonoBehaviour
         Debug.Log(_equipmentManager.WeaponLevels);
     }
 
-    public void BuyTimerUpgrade()
+    public void BuyTimerUpgrade ()
     {
         //The player can buy the weapon if he has enough points, after which the required points are substracted and the weapon level is upgraded
-        if (_pointManager.Points >= 1000 * _equipmentManager.TimerLevels && _equipmentManager.TimerLevels < 5)
+        if (_pointManager.Points >= 1000 * _equipmentManager.TimerLevels && _equipmentManager.TimerLevels < 6)
         {
             _pointManager.Points -= 1000 * _equipmentManager.TimerLevels;
             _equipmentManager.TimerLevels++;
@@ -38,10 +39,10 @@ public class ShopManager : MonoBehaviour
         Debug.Log(_equipmentManager.TimerLevels);
     }
 
-    public void BuyHealthUpgrade()
+    public void BuyHealthUpgrade ()
     {
         //The player can buy the weapon if he has enough points, after which the required points are substracted and the weapon level is upgraded
-        if (_pointManager.Points >= 1000 * _equipmentManager.HealthLevels && _equipmentManager.HealthLevels < 5)
+        if (_pointManager.Points >= 1000 * _equipmentManager.HealthLevels && _equipmentManager.HealthLevels < 6)
         {
             _pointManager.Points -= 1000 * _equipmentManager.HealthLevels;
             _equipmentManager.HealthLevels++;

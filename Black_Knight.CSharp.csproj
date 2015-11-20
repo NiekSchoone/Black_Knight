@@ -73,11 +73,17 @@
     <Compile Include="Assets\Scripts\Controllers\BackgroundScroller.cs" />
     <Compile Include="Assets\Scripts\Controllers\InteractableSpawner.cs" />
     <Compile Include="Assets\Scripts\Controllers\ScenerySpawner.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
+    <Compile Include="Assets\Scripts\HitEvent.cs" />
     <Compile Include="Assets\Scripts\ItemDropper.cs" />
     <Compile Include="Assets\Scripts\Managers\EquipmentManager.cs" />
     <Compile Include="Assets\Scripts\Managers\PointManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
+    <Compile Include="Assets\Scripts\MeleeAttack.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
+    <Compile Include="Assets\Scripts\PillageMeter.cs" />
+    <Compile Include="Assets\Scripts\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\TestMovement.cs" />
     <Compile Include="Assets\Scripts\Utilities\CameraShake.cs" />
     <Compile Include="Assets\Scripts\Utilities\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Utilities\CleanSelf.cs" />

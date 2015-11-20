@@ -1,17 +1,26 @@
 ﻿//Written by Rob Verhoef
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ShopManager : MonoBehaviour
 {
     private PointManager _pointManager;
     private EquipmentManager _equipmentManager;
+    private Text _pointText;
+    private Text _weaponText;
+    private Text _timerText;
+    private Text _healthText;
 
-	void Awake ()
+    void Awake ()
     {
         _pointManager = GameObject.Find("Point Manager").GetComponent<PointManager>();
         _equipmentManager = GameObject.Find("Equipment Manager").GetComponent<EquipmentManager>();
-        Debug.Log(_pointManager.Points);
+        _pointText = GameObject.Find("Total Points Text").GetComponent<Text>();
+        _weaponText = GameObject.Find("Weapon Upgrade Level Text").GetComponent<Text>();
+        _timerText = GameObject.Find("Beard Upgrade Level Text").GetComponent<Text>();
+        _healthText = GameObject.Find("Helmet Upgrade Level Text").GetComponent<Text>();
+        UpdateText();
         DontDestroyOnLoad(transform.gameObject);
     }
 
@@ -22,9 +31,8 @@ public class ShopManager : MonoBehaviour
         { 
             _pointManager.Points -= 1000 * _equipmentManager.WeaponLevels;
             _equipmentManager.WeaponLevels++;
+            UpdateText();
         }
-        Debug.Log(_pointManager.Points);
-        Debug.Log(_equipmentManager.WeaponLevels);
     }
 
     public void BuyTimerUpgrade ()
@@ -34,9 +42,8 @@ public class ShopManager : MonoBehaviour
         {
             _pointManager.Points -= 1000 * _equipmentManager.TimerLevels;
             _equipmentManager.TimerLevels++;
+            UpdateText();
         }
-        Debug.Log(_pointManager.Points);
-        Debug.Log(_equipmentManager.TimerLevels);
     }
 
     public void BuyHealthUpgrade ()
@@ -46,8 +53,37 @@ public class ShopManager : MonoBehaviour
         {
             _pointManager.Points -= 1000 * _equipmentManager.HealthLevels;
             _equipmentManager.HealthLevels++;
+            UpdateText();
         }
-        Debug.Log(_pointManager.Points);
-        Debug.Log(_equipmentManager.HealthLevels);
+    }
+
+    void UpdateText ()
+    {
+        //Updates the UI texts
+        _pointText.text = ("Coins: " + _pointManager.Points);
+        if (_equipmentManager.WeaponLevels < 6)
+        {
+            _weaponText.text = ("Cost: " + 1000 * _equipmentManager.WeaponLevels);
+        }
+        else if (_equipmentManager.WeaponLevels >= 6)
+        {
+            _weaponText.text = ("Sold Out");
+        }
+        if (_equipmentManager.TimerLevels < 6)
+        {
+            _timerText.text = ("Cost: " + 1000 * _equipmentManager.TimerLevels);
+        }
+        else if (_equipmentManager.TimerLevels >= 6)
+        {
+            _timerText.text = ("Sold Out");
+        }
+        if (_equipmentManager.HealthLevels < 6)
+        {
+            _healthText.text = ("Cost: " + 1000 * _equipmentManager.HealthLevels);
+        }
+        else if (_equipmentManager.HealthLevels >= 6)
+        {
+            _healthText.text = ("Sold Out");
+        }
     }
 }

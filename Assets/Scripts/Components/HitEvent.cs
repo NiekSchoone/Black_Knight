@@ -41,9 +41,4 @@ public class HitEvent : MonoBehaviour
 
         }
     }
-
-    public void DestructAfterHit()
-    {
-        Destroy(this.gameObject);
-    }
 }

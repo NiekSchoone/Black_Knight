@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - HitObject
+  - PickupCollider
+  - Test
   layers:
   - Default
   - TransparentFX

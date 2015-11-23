@@ -6,7 +6,7 @@ public class CoinBounce : MonoBehaviour
     private float bounceSpeedY;
     private float bounceSpeedX;
     private float bounceHeight;
-    private float bounceAmount;
+    private int bounceAmount;
     private float bounceTime;
 
     private float startTime;
@@ -16,10 +16,10 @@ public class CoinBounce : MonoBehaviour
         bounceSpeedX = Random.Range(1.5f, 2.5f);
         bounceSpeedY = Random.Range(0.5f, 1.5f);
         bounceHeight = Random.Range(1.5f, 2.5f);
-        bounceAmount = Random.Range(1.5f, 2.5f); ;
+        bounceAmount = Random.Range(1, 3);
 
         startTime = Time.time;
-
+        
         StartCoroutine(Bounce());
     }
 
@@ -27,13 +27,12 @@ public class CoinBounce : MonoBehaviour
     {
         for (int i = 0; i < bounceAmount; i++)
         {
-
             bounceTime = 0;
             while (bounceTime < 1)
             {
                 float localTime = Time.time - startTime;
                 bounceTime += Time.deltaTime * bounceSpeedY;
-                transform.position = new Vector2(bounceSpeedX * localTime, BounceMath(bounceTime) * bounceHeight);
+                transform.position = new Vector2(bounceSpeedX * localTime, -1.5f + BounceMath(bounceTime) * bounceHeight);
                 yield return null;
             }
             bounceHeight--;

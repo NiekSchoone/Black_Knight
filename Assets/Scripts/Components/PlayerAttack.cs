@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour
 	void Start ()
     {
         attackTimer = 0;
-        attackCooldown = 1f;
+        attackCooldown = 0.5f;
 
         attacking = false;
 

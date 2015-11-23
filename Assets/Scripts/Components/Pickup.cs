@@ -4,9 +4,9 @@ using System.Collections;
 public class Pickup : MonoBehaviour
 {
     public int itemValue;
-    public string picker = "Player";
+    public string picker = "PickupCollider";
 
-    void OnCollisionEnter2D(Collision2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == picker)
         {

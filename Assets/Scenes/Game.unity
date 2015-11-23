@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6b089437d84464cba1bbb8ecdf0f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: .00400000019
 --- !u!23 &288980711
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -319,6 +320,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 13.3999996
       objectReference: {fileID: 0}
+    - target: {fileID: 11411004, guid: 2915fcf00174c704aa1b42f10f03859d, type: 2}
+      propertyPath: _speed
+      value: .00100000005
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2915fcf00174c704aa1b42f10f03859d, type: 2}
   m_IsPrefabParent: 0
@@ -393,6 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6b089437d84464cba1bbb8ecdf0f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: .00100000005
 --- !u!23 &731780737
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -839,6 +845,10 @@ Prefab:
     - target: {fileID: 426712, guid: 2915fcf00174c704aa1b42f10f03859d, type: 2}
       propertyPath: m_LocalScale.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411004, guid: 2915fcf00174c704aa1b42f10f03859d, type: 2}
+      propertyPath: _speed
+      value: .00400000019
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2915fcf00174c704aa1b42f10f03859d, type: 2}

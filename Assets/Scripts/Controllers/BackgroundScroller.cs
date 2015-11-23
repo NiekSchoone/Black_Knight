@@ -4,7 +4,7 @@ using System.Collections;
 
 public class BackgroundScroller : MonoBehaviour
 {
-    private float _speed = 0.005f;
+    [SerializeField]private float _speed = 0.005f;
     private float _offset;
     private Renderer _renderer;
 

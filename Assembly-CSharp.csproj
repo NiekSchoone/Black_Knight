@@ -45,30 +45,35 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AttackTest.cs" />
-     <Compile Include="Assets\Scripts\CheckForHit.cs" />
+     <Compile Include="Assets\Scripts\Components\GameOver.cs" />
+     <Compile Include="Assets\Scripts\Components\HitEvent.cs" />
+     <Compile Include="Assets\Scripts\Components\ItemDropper.cs" />
+     <Compile Include="Assets\Scripts\Components\MeleeAttack.cs" />
+     <Compile Include="Assets\Scripts\Components\Pickup.cs" />
+     <Compile Include="Assets\Scripts\Components\PillageMeter.cs" />
+     <Compile Include="Assets\Scripts\Components\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\Controllers\BackgroundScroller.cs" />
      <Compile Include="Assets\Scripts\Controllers\InteractableSpawner.cs" />
      <Compile Include="Assets\Scripts\Controllers\ScenerySpawner.cs" />
-     <Compile Include="Assets\Scripts\GameOver.cs" />
-     <Compile Include="Assets\Scripts\HitEvent.cs" />
-     <Compile Include="Assets\Scripts\ItemDropper.cs" />
      <Compile Include="Assets\Scripts\Managers\EquipmentManager.cs" />
      <Compile Include="Assets\Scripts\Managers\PointManager.cs" />
      <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
-     <Compile Include="Assets\Scripts\MeleeAttack.cs" />
-     <Compile Include="Assets\Scripts\Pickup.cs" />
-     <Compile Include="Assets\Scripts\PillageMeter.cs" />
-     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
-     <Compile Include="Assets\Scripts\TestMovement.cs" />
+     <Compile Include="Assets\Scripts\Tests\CoinBounce.cs" />
+     <Compile Include="Assets\Scripts\Tests\TestMovement.cs" />
      <Compile Include="Assets\Scripts\Utilities\CameraShake.cs" />
      <Compile Include="Assets\Scripts\Utilities\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\Utilities\CleanSelf.cs" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

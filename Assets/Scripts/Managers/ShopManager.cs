@@ -7,7 +7,6 @@ public class ShopManager : MonoBehaviour
 {
     private PointManager _pointManager;
     private EquipmentManager _equipmentManager;
-    private Text _pointText;
     private Text _weaponText;
     private Text _timerText;
     private Text _healthText;
@@ -16,12 +15,10 @@ public class ShopManager : MonoBehaviour
     {
         _pointManager = GameObject.Find("Point Manager").GetComponent<PointManager>();
         _equipmentManager = GameObject.Find("Equipment Manager").GetComponent<EquipmentManager>();
-        _pointText = GameObject.Find("Total Points Text").GetComponent<Text>();
         _weaponText = GameObject.Find("Weapon Upgrade Level Text").GetComponent<Text>();
         _timerText = GameObject.Find("Beard Upgrade Level Text").GetComponent<Text>();
         _healthText = GameObject.Find("Helmet Upgrade Level Text").GetComponent<Text>();
         UpdateText();
-        DontDestroyOnLoad(transform.gameObject);
     }
 
     public void BuyWeaponUpgrade ()
@@ -60,7 +57,6 @@ public class ShopManager : MonoBehaviour
     void UpdateText ()
     {
         //Updates the UI texts
-        _pointText.text = ("Coins: " + _pointManager.Points);
         if (_equipmentManager.WeaponLevels < 6)
         {
             _weaponText.text = ("Cost: " + 1000 * _equipmentManager.WeaponLevels);

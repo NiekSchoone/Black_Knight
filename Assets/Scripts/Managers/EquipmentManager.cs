@@ -7,10 +7,19 @@ public class EquipmentManager : MonoBehaviour
     private int _currentWeaponLevel = 1;
     private int _currentTimerLevel = 1;
     private int _currentHealthLevel = 1;
+    public static EquipmentManager Instance;
 
 	void Awake ()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        if (Instance)
+        {
+            DestroyImmediate(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
     }
 
     public int WeaponLevels

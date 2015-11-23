@@ -12,7 +12,7 @@ public class InteractableSpawner : MonoBehaviour
 
     void Awake ()
     {
-        _interactables = Resources.LoadAll("Prefabs/Interactable/Formations", typeof (Object));
+        _interactables = Resources.LoadAll("Prefabs/Interactables", typeof (Object));
     }
 
     void Update ()

@@ -13,7 +13,7 @@ public class ScenerySpawner : MonoBehaviour
 
     void Awake()
     {
-        _sceneries = Resources.LoadAll("Prefabs/Scenery/Formations", typeof(Object));
+        _sceneries = Resources.LoadAll("Prefabs/Sceneries", typeof(Object));
     }
 
     void Update()

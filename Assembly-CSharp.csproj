@@ -45,10 +45,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Components\CoinBounce.cs" />
      <Compile Include="Assets\Scripts\Components\GameOver.cs" />
      <Compile Include="Assets\Scripts\Components\HitEvent.cs" />
      <Compile Include="Assets\Scripts\Components\ItemDropper.cs" />
      <Compile Include="Assets\Scripts\Components\MeleeAttack.cs" />
+     <Compile Include="Assets\Scripts\Components\ObjectMovement.cs" />
      <Compile Include="Assets\Scripts\Components\Pickup.cs" />
      <Compile Include="Assets\Scripts\Components\PillageMeter.cs" />
      <Compile Include="Assets\Scripts\Components\PlayerAttack.cs" />
@@ -58,8 +60,6 @@
      <Compile Include="Assets\Scripts\Managers\EquipmentManager.cs" />
      <Compile Include="Assets\Scripts\Managers\PointManager.cs" />
      <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
-     <Compile Include="Assets\Scripts\Tests\CoinBounce.cs" />
-     <Compile Include="Assets\Scripts\Tests\ObjectMovement.cs" />
      <Compile Include="Assets\Scripts\Utilities\CameraShake.cs" />
      <Compile Include="Assets\Scripts\Utilities\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\Utilities\CleanSelf.cs" />

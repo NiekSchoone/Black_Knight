@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Written by Niek Schoone
+using UnityEngine;
 using System.Collections;
 
 public class CoinBounce : MonoBehaviour
@@ -8,8 +9,11 @@ public class CoinBounce : MonoBehaviour
     private float bounceHeight;
     private int bounceAmount;
     private float bounceTime;
-
     private float startTime;
+
+    private Vector2 localPos;
+
+    private Collider2D collider;
 
     void Start()
     {
@@ -19,7 +23,12 @@ public class CoinBounce : MonoBehaviour
         bounceAmount = Random.Range(1, 3);
 
         startTime = Time.time;
-        
+
+        collider = GetComponent<Collider2D>();
+        collider.enabled = false;
+
+        localPos = new Vector2(transform.position.x, transform.position.y);
+
         StartCoroutine(Bounce());
     }
 
@@ -30,17 +39,19 @@ public class CoinBounce : MonoBehaviour
             bounceTime = 0;
             while (bounceTime < 1)
             {
+                //Get the time since the coroutine started
                 float localTime = Time.time - startTime;
                 bounceTime += Time.deltaTime * bounceSpeedY;
-                transform.position = new Vector2(bounceSpeedX * localTime, -1.5f + BounceMath(bounceTime) * bounceHeight);
+                transform.position = new Vector2(localPos.x + bounceSpeedX * localTime, localPos.y + BounceMath(bounceTime) * bounceHeight);
                 yield return null;
             }
             bounceHeight--;
         }
+        collider.enabled = true;
     }
 
     float BounceMath(float t)
     {
         return Mathf.Sin(Mathf.Clamp01(t) * Mathf.PI);
     }
-}
+} 

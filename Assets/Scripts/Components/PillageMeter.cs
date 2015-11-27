@@ -1,13 +1,12 @@
-﻿using UnityEngine;
+﻿//Written by Niek Schoone
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
 public class PillageMeter : MonoBehaviour
 {
     public Slider slider;
-
     public GameOver gameOver;
-
     public float pillageModifier;
 
     void Start()

@@ -1,11 +1,15 @@
-﻿using UnityEngine;
+﻿//Written by Niek Schoone
+using UnityEngine;
 using System.Collections;
 
 public class Pickup : MonoBehaviour
 {
-    public int itemValue;
-    public string picker = "PickupCollider";
-    public GameObject pointManager;
+    [SerializeField]
+    private int itemValue;
+    [SerializeField]
+    private string picker = "PickupCollider";
+    [SerializeField]
+    private GameObject pointManager;
 
     void Awake()
     {

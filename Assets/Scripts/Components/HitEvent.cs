@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿//Written by Niek Schoone
+using UnityEngine;
 using System.Collections;
 
 public class HitEvent : MonoBehaviour
@@ -10,12 +11,14 @@ public class HitEvent : MonoBehaviour
     private bool isHit;
 
     private Animator animator;
+    private Collider2D collider;
 
     void Start()
     {
         isHit = false;
 
         animator = GetComponent<Animator>();
+        collider = GetComponent<Collider2D>();
 
         if (this.gameObject.tag == "Player")
         {
@@ -31,6 +34,7 @@ public class HitEvent : MonoBehaviour
     {
         isHit = true;
         animator.SetBool("Hit", isHit);
+        collider.enabled = false;
 
         if(isPlayer == false)
         {

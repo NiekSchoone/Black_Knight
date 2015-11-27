@@ -1,13 +1,12 @@
-﻿using UnityEngine;
+﻿//Written by Niek Schoone
+using UnityEngine;
 using System.Collections;
 
 public class PlayerAttack : MonoBehaviour
 {
     private bool attacking;
-
     private float attackTimer;
     private float attackCooldown;
-
     private Animator animator;
 
 	void Start ()
@@ -32,6 +31,8 @@ public class PlayerAttack : MonoBehaviour
         {
             if(attackTimer > 0)
             {
+
+
                 attackTimer -= Time.deltaTime;
             }else
             {

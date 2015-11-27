@@ -1,26 +1,27 @@
 ﻿//Written by Rob Verhoef
 using UnityEngine;
 using System.Collections;
-using Random = UnityEngine.Random; 
+using Random = UnityEngine.Random;
 
-public class InteractableSpawner : MonoBehaviour 
+public class InteractableSpawner : MonoBehaviour
 {
-    [SerializeField] private Object[] _interactables;
+    [SerializeField]
+    private Object[] _interactables;
     private Object _chosenInteractable;
     private float _randomSpawntime;
     private bool _spawning;
 
-    void Awake ()
+    void Awake()
     {
-        _interactables = Resources.LoadAll("Prefabs/Interactables", typeof (Object));
+        _interactables = Resources.LoadAll("Prefabs/Interactables", typeof(Object));
     }
 
-    void Update ()
+    void Update()
     {
         //Spawns an interactable after a randomly determined amount of time, or reduces the spawning timer
         if (_spawning == false && _randomSpawntime == 0)
         {
-            Invoke("Spawn", 25);
+            Invoke("Spawn", 5);
             _spawning = true;
         }
         else if (_randomSpawntime > 0)
@@ -29,12 +30,12 @@ public class InteractableSpawner : MonoBehaviour
         }
     }
 
-    void Spawn ()
+    void Spawn()
     {
         //A random interactable is chosen & spawned
         _chosenInteractable = _interactables[Random.Range(0, _interactables.Length)];
-        Instantiate(_chosenInteractable, new Vector2(Random.Range(-11, 11), transform.position.y), transform.rotation);
-        _randomSpawntime = Random.Range(15, 101);
+        Instantiate(_chosenInteractable, transform.position, transform.rotation);
+        _randomSpawntime = Random.Range(15, 51);
         _spawning = false;
     }
 }

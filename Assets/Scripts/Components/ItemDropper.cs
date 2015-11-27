@@ -6,13 +6,18 @@ public class ItemDropper : MonoBehaviour
 {
     private int dropModifier;
     private int amountToDrop;
+    private EquipmentManager _equipmentManager;
 
     private GameObject[] valuables;
 
+    void Awake ()
+    {
+        _equipmentManager = GameObject.Find("Equipment Manager").GetComponent<EquipmentManager>();
+        dropModifier = _equipmentManager.WeaponLevels;
+    }
+
 	void Start ()
     {
-        dropModifier = 1;
-
         //Get all the point objects from the resources folder
         valuables = Resources.LoadAll<GameObject>("Prefabs/Valuables");
 	}
@@ -21,7 +26,7 @@ public class ItemDropper : MonoBehaviour
     public void DropPointObjects()
     {
         //Get a random amount of point objects
-        amountToDrop = Random.Range(1, 5) * dropModifier;
+        amountToDrop = Random.Range(1, 6) * dropModifier;
 
         for (int i = 0; i < amountToDrop; i++)
         {

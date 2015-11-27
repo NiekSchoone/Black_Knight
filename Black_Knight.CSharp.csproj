@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Controllers\InteractableSpawner.cs" />
     <Compile Include="Assets\Scripts\Controllers\ScenerySpawner.cs" />
     <Compile Include="Assets\Scripts\Managers\EquipmentManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\LifeManager.cs" />
     <Compile Include="Assets\Scripts\Managers\PointManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
     <Compile Include="Assets\Scripts\Utilities\CameraShake.cs" />

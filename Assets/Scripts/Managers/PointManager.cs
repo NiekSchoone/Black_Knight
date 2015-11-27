@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PointManager : MonoBehaviour
 {
-    private int _points = 50000;
+    private int _points;
     private Text _pointText;
     public static PointManager Instance;
 

@@ -9,7 +9,7 @@ public class Pickup : MonoBehaviour
 
     void Awake()
     {
-        pointManager = GameObject.Find("PointManager");
+        pointManager = GameObject.Find("Point Manager");
     }
 
     void OnTriggerEnter2D(Collider2D col)

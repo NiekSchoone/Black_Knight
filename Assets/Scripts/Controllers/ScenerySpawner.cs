@@ -8,7 +8,7 @@ public class ScenerySpawner : MonoBehaviour
     [SerializeField]
     private Object[] _sceneries;
     private Object _chosenScenery;
-    private float _randomSpawntime;
+    private int _randomSpawntime;
     private bool _spawning;
 
     void Awake()
@@ -16,12 +16,12 @@ public class ScenerySpawner : MonoBehaviour
         _sceneries = Resources.LoadAll("Prefabs/Sceneries", typeof(Object));
     }
 
-    void Update()
+    void FixedUpdate()
     {
         //Spawns an scenery after a randomly determined amount of time, or reduces the spawning timer
         if (_spawning == false && _randomSpawntime == 0)
         {
-            Invoke("Spawn", 20);
+            Invoke("Spawn", 5);
             _spawning = true;
         }
         else if (_randomSpawntime > 0)
@@ -35,7 +35,7 @@ public class ScenerySpawner : MonoBehaviour
         //A random scenery is chosen & spawned
         _chosenScenery = _sceneries[Random.Range(0, _sceneries.Length)];
         Instantiate(_chosenScenery, transform.position, transform.rotation);
-        _randomSpawntime = Random.Range(0, 101);
+        _randomSpawntime = Random.Range(0, 401);
         _spawning = false;
     }
 }

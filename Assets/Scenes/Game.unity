@@ -765,6 +765,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5005104, guid: 41b02131bf4f4254cb2a5b6812417cd6, type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005104, guid: 41b02131bf4f4254cb2a5b6812417cd6, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 41b02131bf4f4254cb2a5b6812417cd6, type: 2}
   m_IsPrefabParent: 0
@@ -963,6 +971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactables: []
+  _randomSpawntime: 0
 --- !u!1001 &1555070905
 Prefab:
   m_ObjectHideFlags: 0
@@ -1044,11 +1053,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22408604, guid: 27a4615c1ac003a4dad2503436bfe8fe, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22408604, guid: 27a4615c1ac003a4dad2503436bfe8fe, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11463194, guid: 27a4615c1ac003a4dad2503436bfe8fe, type: 2}
       propertyPath: m_Value

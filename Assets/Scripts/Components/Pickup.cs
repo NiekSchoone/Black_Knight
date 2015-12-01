@@ -10,6 +10,7 @@ public class Pickup : MonoBehaviour
     private string picker = "PickupCollider";
     [SerializeField]
     private GameObject pointManager;
+    private EquipmentManager _equipmentManager;
 
     void Awake()
     {

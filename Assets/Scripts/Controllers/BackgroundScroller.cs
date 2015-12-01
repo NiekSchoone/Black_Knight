@@ -20,7 +20,6 @@ public class BackgroundScroller : MonoBehaviour
         if (_offset > 1.0f)
         {
             _offset -= 1.0f;
-            Debug.Log("Scrolling");
         }
         _renderer.material.mainTextureOffset = new Vector2 (_offset, 0);
 	}

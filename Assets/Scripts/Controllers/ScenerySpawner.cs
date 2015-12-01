@@ -21,7 +21,7 @@ public class ScenerySpawner : MonoBehaviour
         //Spawns an scenery after a randomly determined amount of time, or reduces the spawning timer
         if (_spawning == false && _randomSpawntime == 0)
         {
-            Invoke("Spawn", 5);
+            Invoke("Spawn", 20);
             _spawning = true;
         }
         else if (_randomSpawntime > 0)
@@ -35,7 +35,7 @@ public class ScenerySpawner : MonoBehaviour
         //A random scenery is chosen & spawned
         _chosenScenery = _sceneries[Random.Range(0, _sceneries.Length)];
         Instantiate(_chosenScenery, transform.position, transform.rotation);
-        _randomSpawntime = Random.Range(15, 101);
+        _randomSpawntime = Random.Range(0, 101);
         _spawning = false;
     }
 }

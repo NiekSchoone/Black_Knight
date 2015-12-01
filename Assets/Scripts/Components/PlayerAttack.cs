@@ -31,8 +31,6 @@ public class PlayerAttack : MonoBehaviour
         {
             if(attackTimer > 0)
             {
-
-
                 attackTimer -= Time.deltaTime;
             }else
             {

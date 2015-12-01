@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
+    [SerializeField]
     private GameObject menu;
     private GameObject replay;
     private GameObject gameOverText;

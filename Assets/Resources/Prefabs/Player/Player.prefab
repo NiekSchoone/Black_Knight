@@ -27,8 +27,7 @@ GameObject:
   - 4: {fileID: 485254}
   - 212: {fileID: 21274058}
   - 95: {fileID: 9511372}
-  - 61: {fileID: 6139854}
-  - 50: {fileID: 5005104}
+  - 61: {fileID: 6184086}
   - 114: {fileID: 11452690}
   - 114: {fileID: 11445936}
   - 114: {fileID: 11421170}
@@ -64,22 +63,6 @@ Transform:
   - {fileID: 404998}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5005104
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193080}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!50 &5055232
 Rigidbody2D:
   serializedVersion: 2
@@ -96,7 +79,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &6139854
+--- !u!61 &6184086
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,7 +91,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: .25, y: 0}
   serializedVersion: 2
-  m_Size: {x: .699999988, y: 1}
+  m_Size: {x: .600000024, y: 1}
 --- !u!61 &6197958
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -192,7 +175,9 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}

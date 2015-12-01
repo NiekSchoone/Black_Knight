@@ -5,7 +5,7 @@ using System.Collections;
 public class HitEvent : MonoBehaviour
 {
     private ItemDropper drops;
-    public PillageMeter meter;
+    private PillageMeter meter;
 
     private bool isPlayer;
     private bool isHit;
@@ -17,6 +17,7 @@ public class HitEvent : MonoBehaviour
     {
         isHit = false;
 
+        meter = GameObject.Find("Manager").GetComponent<PillageMeter>();
         animator = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
 

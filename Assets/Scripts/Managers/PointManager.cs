@@ -26,7 +26,7 @@ public class PointManager : MonoBehaviour
     void Update ()
     {
         //Displays the point value in the UI
-        _pointText.text = ("Coins: " + Points);
+        _pointText.text = ("Plunder Value: " + Points);
     }
 
     public int Points

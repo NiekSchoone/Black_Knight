@@ -21,7 +21,7 @@ public class InteractableSpawner : MonoBehaviour
         //Spawns an interactable after a randomly determined amount of time, or reduces the spawning timer
         if (_spawning == false && _randomSpawntime == 0)
         {
-            Invoke("Spawn", 5);
+            Invoke("Spawn", 1);
             _spawning = true;
         }
         else if (_randomSpawntime > 0)
@@ -35,7 +35,7 @@ public class InteractableSpawner : MonoBehaviour
         //A random interactable is chosen & spawned
         _chosenInteractable = _interactables[Random.Range(0, _interactables.Length)];
         Instantiate(_chosenInteractable, transform.position, transform.rotation);
-        _randomSpawntime = Random.Range(0, 201);
+        _randomSpawntime = Random.Range(0, 251);
         _spawning = false;
     }
 }

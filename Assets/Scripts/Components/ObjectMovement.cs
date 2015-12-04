@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ObjectMovement : MonoBehaviour
 {
-    private float speed = -0.05f;
+    private float speed = -0.0535f;
 
 	void Update ()
     {

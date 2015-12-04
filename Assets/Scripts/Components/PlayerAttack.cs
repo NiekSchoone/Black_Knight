@@ -12,7 +12,7 @@ public class PlayerAttack : MonoBehaviour
 	void Start ()
     {
         attackTimer = 0;
-        attackCooldown = 0.5f;
+        attackCooldown = 1f;
 
         attacking = false;
 
@@ -21,21 +21,26 @@ public class PlayerAttack : MonoBehaviour
 	
 	void Update ()
     {
-	    if(Input.GetKey("space") && !attacking)
+        Debug.Log(attackTimer);
+        if (attackTimer <= 0)
         {
-            attacking = true;
-            attackTimer = attackCooldown;
+            if (!attacking)
+            {
+                if (Input.GetKeyDown("space"))
+                {
+                    attacking = true;
+                    attackTimer = attackCooldown;
+                }
+            }
+        }
+        else
+        {
+            attackTimer -= Time.deltaTime;
         }
 
-        if(attacking)
+        if (Input.GetKeyUp("space"))
         {
-            if(attackTimer > 0)
-            {
-                attackTimer -= Time.deltaTime;
-            }else
-            {
-                attacking = false;
-            }
+            attacking = false;
         }
         animator.SetBool("Attacking", attacking);
 	}

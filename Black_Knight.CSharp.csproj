@@ -94,6 +94,7 @@
     <Compile Include="Assets\Scripts\Utilities\CameraShake.cs" />
     <Compile Include="Assets\Scripts\Utilities\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Utilities\CleanSelf.cs" />
+    <Compile Include="Assets\Scripts\Utilities\Fader.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

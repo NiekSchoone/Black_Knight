@@ -8,12 +8,16 @@ public class PillageMeter : MonoBehaviour
     public Slider slider;
     public GameOver gameOver;
     public float pillageModifier;
+    private EquipmentManager _equipmentManager;
+
+    void Awake()
+    {
+        _equipmentManager = GameObject.Find("Equipment Manager").GetComponent<EquipmentManager>();
+    }
 
     void Start()
     {
         slider.value = slider.value;
-
-        pillageModifier = 5;
     }
 
 	void Update ()
@@ -30,6 +34,6 @@ public class PillageMeter : MonoBehaviour
 
     public void AddToMeter()
     {
-        slider.value += pillageModifier;
+        slider.value += _equipmentManager.TimerLevels;
     }
 }

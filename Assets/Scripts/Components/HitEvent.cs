@@ -13,6 +13,11 @@ public class HitEvent : MonoBehaviour
     private Animator animator;
     private Collider2D myCollider;
 
+    void Awake ()
+    {
+        meter = GameObject.Find("Pillage Meter").GetComponent<PillageMeter>();
+    }
+
     void Start()
     {
         isHit = false;

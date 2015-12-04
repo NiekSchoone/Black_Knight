@@ -83,7 +83,6 @@
     <Compile Include="Assets\Scripts\Components\Pickup.cs" />
     <Compile Include="Assets\Scripts\Components\PillageMeter.cs" />
     <Compile Include="Assets\Scripts\Components\PlayerAttack.cs" />
-    <Compile Include="Assets\Scripts\Controllers\BackgroundChunks.cs" />
     <Compile Include="Assets\Scripts\Controllers\BackgroundScroller.cs" />
     <Compile Include="Assets\Scripts\Controllers\InteractableSpawner.cs" />
     <Compile Include="Assets\Scripts\Controllers\ScenerySpawner.cs" />

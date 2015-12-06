@@ -21,8 +21,6 @@ public class HitEvent : MonoBehaviour
     void Start()
     {
         isHit = false;
-
-        meter = GameObject.Find("Manager").GetComponent<PillageMeter>();
         animator = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
 

@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0b9c0e6cfa87a04c922544f2e3d8282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meter: {fileID: 0}
 --- !u!212 &21238950
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -139,7 +138,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 16
   m_Sprite: {fileID: 21300000, guid: bdb38068403e4cb4f9ab28dc2f9b1130, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
@@ -168,7 +167,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

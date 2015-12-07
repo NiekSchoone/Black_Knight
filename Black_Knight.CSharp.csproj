@@ -57,6 +57,15 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
+=======
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+>>>>>>> origin/master
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -78,9 +87,13 @@
     <Compile Include="Assets\Scripts\Components\PillageMeter.cs" />
     <Compile Include="Assets\Scripts\Components\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Controllers\BackgroundScroller.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Controllers\InteractableSpawner.cs" />
     <Compile Include="Assets\Scripts\Controllers\ScenerySpawner.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyAttack.cs" />
+=======
+    <Compile Include="Assets\Scripts\Controllers\UniversalSpawner.cs" />
+>>>>>>> origin/master
     <Compile Include="Assets\Scripts\Managers\EquipmentManager.cs" />
     <Compile Include="Assets\Scripts\Managers\LifeManager.cs" />
     <Compile Include="Assets\Scripts\Managers\PointManager.cs" />

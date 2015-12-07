@@ -20,7 +20,7 @@ public class PillageMeter : MonoBehaviour
         slider.value = slider.value;
     }
 
-	void Update ()
+	void FixedUpdate ()
     {
 
         if(slider.value == 0)
@@ -28,12 +28,12 @@ public class PillageMeter : MonoBehaviour
             gameOver.EndGame();
         }else
         {
-            slider.value -= 5 * Time.deltaTime;
+            slider.value -= 6 / _equipmentManager.TimerLevels * Time.deltaTime;
         }
     }
 
     public void AddToMeter()
     {
-        slider.value += 5 * _equipmentManager.TimerLevels;
+        slider.value += 18;
     }
 }

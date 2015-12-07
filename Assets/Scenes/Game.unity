@@ -360,10 +360,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 680085258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bee0f8be3093b949a24c8b492a404dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 380a3e8a9be81de44994a50b35899e76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneries: []
+  _objects: []
+  _maxSpawnTime: 501
+  _loadPath: Prefabs/Sceneries
 --- !u!4 &680085260
 Transform:
   m_ObjectHideFlags: 0
@@ -959,11 +961,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1098489778}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e125c70a85324f746988449cac28d6af, type: 3}
+  m_Script: {fileID: 11500000, guid: 380a3e8a9be81de44994a50b35899e76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactables: []
-  _randomSpawntime: 0
+  _objects: []
+  _maxSpawnTime: 251
+  _loadPath: Prefabs/Interactables
 --- !u!1 &1455770435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1658397551
 RectTransform:
   m_ObjectHideFlags: 0

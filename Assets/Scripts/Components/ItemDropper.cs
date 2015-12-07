@@ -13,7 +13,8 @@ public class ItemDropper : MonoBehaviour
     void Awake ()
     {
         _equipmentManager = GameObject.Find("Equipment Manager").GetComponent<EquipmentManager>();
-        dropModifier = _equipmentManager.WeaponLevels;
+        dropModifier += _equipmentManager.WeaponLevels;
+        dropModifier += _equipmentManager.TimerLevels / 2;
     }
 
 	void Start ()

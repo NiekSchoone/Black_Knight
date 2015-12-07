@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 6123c476e20ae864ba78b81f34d27d28
-timeCreated: 1448621911
+guid: d384b253e87c0554ca58939f7818a5ad
+timeCreated: 1449482567
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: barrel_distruction_animation 1_0
-    21300002: barrel_distruction_animation 1_1
-    21300004: barrel_distruction_animation 1_2
-    21300006: barrel_distruction_animation 1_3
-    21300008: barrel_distruction_animation 1_4
-    21300010: barrel_distruction_animation 1_5
-    21300012: barrel_distruction_animation 1_6
-    21300014: barrel_distruction_animation 1_7
-    21300016: barrel_distruction_animation 1_8
-    21300018: barrel_distruction_animation 1_9
-    21300020: barrel_distruction_animation 1_10
-    21300022: barrel_distruction_animation 1_11
-    21300024: barrel_distruction_animation 1_12
-    21300026: barrel_distruction_animation 1_13
-    21300028: barrel_distruction_animation 1_14
-    21300030: barrel_distruction_animation 1_15
-    21300032: barrel_distruction_animation 1_16
-    21300034: barrel_distruction_animation 1_17
-    21300036: barrel_distruction_animation 1_18
-    21300038: barrel_distruction_animation 1_19
-    21300040: barrel_distruction_animation 1_20
-    21300042: barrel_distruction_animation 1_21
-    21300044: barrel_distruction_animation 1_22
-    21300046: barrel_distruction_animation 1_23
-    21300048: barrel_distruction_animation 1_24
-    21300050: barrel_distruction_animation 1_25
-    21300052: barrel_distruction_animation 1_26
-    21300054: barrel_distruction_animation 1_27
+    21300000: barrel_distruction_animation (1)_0
+    21300002: barrel_distruction_animation (1)_1
+    21300004: barrel_distruction_animation (1)_2
+    21300006: barrel_distruction_animation (1)_3
+    21300008: barrel_distruction_animation (1)_4
+    21300010: barrel_distruction_animation (1)_5
+    21300012: barrel_distruction_animation (1)_6
+    21300014: barrel_distruction_animation (1)_7
+    21300016: barrel_distruction_animation (1)_8
+    21300018: barrel_distruction_animation (1)_9
+    21300020: barrel_distruction_animation (1)_10
+    21300022: barrel_distruction_animation (1)_11
+    21300024: barrel_distruction_animation (1)_12
+    21300026: barrel_distruction_animation (1)_13
+    21300028: barrel_distruction_animation (1)_14
+    21300030: barrel_distruction_animation (1)_15
+    21300032: barrel_distruction_animation (1)_16
+    21300034: barrel_distruction_animation (1)_17
+    21300036: barrel_distruction_animation (1)_18
+    21300038: barrel_distruction_animation (1)_19
+    21300040: barrel_distruction_animation (1)_20
+    21300042: barrel_distruction_animation (1)_21
+    21300044: barrel_distruction_animation (1)_22
+    21300046: barrel_distruction_animation (1)_23
+    21300048: barrel_distruction_animation (1)_24
+    21300050: barrel_distruction_animation (1)_25
+    21300052: barrel_distruction_animation (1)_26
+    21300054: barrel_distruction_animation (1)_27
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -78,7 +78,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: barrel_distruction_animation 1_0
+    - name: barrel_distruction_animation (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -88,273 +88,273 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_1
+    - name: barrel_distruction_animation (1)_1
       rect:
         serializedVersion: 2
-        x: 1142
+        x: 1144
+        y: 3752
+        width: 1140
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrel_distruction_animation (1)_2
+      rect:
+        serializedVersion: 2
+        x: 2286
         y: 3752
         width: 1142
         height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_2
-      rect:
-        serializedVersion: 2
-        x: 2284
-        y: 3752
-        width: 1142
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_3
+    - name: barrel_distruction_animation (1)_3
       rect:
         serializedVersion: 2
         x: 0
         y: 3408
         width: 1142
-        height: 344
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_4
+    - name: barrel_distruction_animation (1)_4
       rect:
         serializedVersion: 2
-        x: 1142
+        x: 1144
+        y: 3408
+        width: 1140
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrel_distruction_animation (1)_5
+      rect:
+        serializedVersion: 2
+        x: 2286
         y: 3408
         width: 1142
-        height: 344
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_5
-      rect:
-        serializedVersion: 2
-        x: 2284
-        y: 3408
-        width: 1142
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_6
+    - name: barrel_distruction_animation (1)_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 3064
+        y: 3062
         width: 1142
         height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_7
+    - name: barrel_distruction_animation (1)_7
       rect:
         serializedVersion: 2
-        x: 1142
-        y: 3064
-        width: 1142
+        x: 1144
+        y: 3062
+        width: 1140
         height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_8
+    - name: barrel_distruction_animation (1)_8
       rect:
         serializedVersion: 2
-        x: 2284
-        y: 3064
+        x: 2286
+        y: 3062
         width: 1142
         height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2720
-        width: 1142
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_10
-      rect:
-        serializedVersion: 2
-        x: 1142
-        y: 2720
-        width: 1142
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_11
-      rect:
-        serializedVersion: 2
-        x: 2284
-        y: 2720
-        width: 1142
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_12
+    - name: barrel_distruction_animation (1)_9
       rect:
         serializedVersion: 2
         x: 0
-        y: 2376
+        y: 2718
         width: 1142
-        height: 344
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_13
+    - name: barrel_distruction_animation (1)_10
       rect:
         serializedVersion: 2
-        x: 1142
-        y: 2376
-        width: 1142
-        height: 344
+        x: 1144
+        y: 2718
+        width: 1140
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_14
+    - name: barrel_distruction_animation (1)_11
       rect:
         serializedVersion: 2
-        x: 2284
-        y: 2376
+        x: 2286
+        y: 2718
         width: 1142
-        height: 344
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2032
-        width: 1142
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_16
-      rect:
-        serializedVersion: 2
-        x: 1142
-        y: 2032
-        width: 1142
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_17
-      rect:
-        serializedVersion: 2
-        x: 2284
-        y: 2032
-        width: 1142
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_18
+    - name: barrel_distruction_animation (1)_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 1688
+        y: 2372
         width: 1142
         height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_19
+    - name: barrel_distruction_animation (1)_13
       rect:
         serializedVersion: 2
-        x: 1142
-        y: 1688
-        width: 1142
+        x: 1144
+        y: 2372
+        width: 1140
         height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_20
+    - name: barrel_distruction_animation (1)_14
       rect:
         serializedVersion: 2
-        x: 2284
-        y: 1688
+        x: 2286
+        y: 2372
         width: 1142
         height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_21
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1344
-        width: 1142
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_22
-      rect:
-        serializedVersion: 2
-        x: 1142
-        y: 1344
-        width: 1142
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_23
-      rect:
-        serializedVersion: 2
-        x: 2284
-        y: 1344
-        width: 1142
-        height: 344
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_24
+    - name: barrel_distruction_animation (1)_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 1000
+        y: 2028
         width: 1142
-        height: 344
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_25
+    - name: barrel_distruction_animation (1)_16
       rect:
         serializedVersion: 2
-        x: 1142
-        y: 1000
-        width: 1142
-        height: 344
+        x: 1144
+        y: 2028
+        width: 1140
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_26
+    - name: barrel_distruction_animation (1)_17
       rect:
         serializedVersion: 2
-        x: 2284
-        y: 1000
+        x: 2286
+        y: 2028
         width: 1142
-        height: 344
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: barrel_distruction_animation 1_27
+    - name: barrel_distruction_animation (1)_18
       rect:
         serializedVersion: 2
         x: 0
-        y: 656
+        y: 1682
         width: 1142
         height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrel_distruction_animation (1)_19
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1682
+        width: 1140
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrel_distruction_animation (1)_20
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 1682
+        width: 1142
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrel_distruction_animation (1)_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1338
+        width: 1142
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrel_distruction_animation (1)_22
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 1338
+        width: 1140
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrel_distruction_animation (1)_23
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 1338
+        width: 1142
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrel_distruction_animation (1)_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 992
+        width: 1142
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrel_distruction_animation (1)_25
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 992
+        width: 1140
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrel_distruction_animation (1)_26
+      rect:
+        serializedVersion: 2
+        x: 2286
+        y: 992
+        width: 1142
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: barrel_distruction_animation (1)_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 1142
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

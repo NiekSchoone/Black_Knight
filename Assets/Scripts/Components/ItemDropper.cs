@@ -33,7 +33,7 @@ public class ItemDropper : MonoBehaviour
         {
             //Choose a random point object form the valuables list and instantiate it
             GameObject chosenCoin = valuables[Random.Range(0, valuables.Length)];
-            GameObject newDroppedItem = Instantiate(chosenCoin, this.transform.position, Quaternion.identity) as GameObject;
+            GameObject newDroppedItem = Instantiate(chosenCoin, new Vector2(transform.position.x, -4.25f), Quaternion.identity) as GameObject;
         }
     }
 }

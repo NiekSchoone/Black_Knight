@@ -28,12 +28,12 @@ public class PillageMeter : MonoBehaviour
             gameOver.EndGame();
         }else
         {
-            slider.value -= 10 * Time.deltaTime;
+            slider.value -= 5 * Time.deltaTime;
         }
     }
 
     public void AddToMeter()
     {
-        slider.value += _equipmentManager.TimerLevels;
+        slider.value += 5 * _equipmentManager.TimerLevels;
     }
 }

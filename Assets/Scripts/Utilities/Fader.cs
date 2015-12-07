@@ -12,13 +12,13 @@ public class Fader : MonoBehaviour
         _fade = GameObject.Find("Fade").GetComponent<Image>();
     }
 
-    public void FadeIn ()
+    void Start ()
     {
         //The screen fades in
         _fade.CrossFadeColor(Color.clear, 5.0f, true, true);
     }
 
-    public void FadeOut ()
+    public void FadeIn ()
     {
         //The screen fades out
         _fade.CrossFadeColor(Color.black, 1.5f, true, true);

@@ -21,7 +21,6 @@ public class PlayerAttack : MonoBehaviour
 	
 	void Update ()
     {
-        Debug.Log(attackTimer);
         if (attackTimer <= 0)
         {
             if (!attacking)

@@ -20,5 +20,5 @@ Niek Schone
 
 Rob Verhoef
 - [Universal spawner](https://github.com/NiekSchoone/Black_Knight/blob/master/Assets/Scripts/Controllers/UniversalSpawner.cs)
-- [Equipment system](https://github.com/NiekSchoone/Black_Knight/blob/master/Assets/Scripts/Managers/EquipmentManager.cs)
+- [Equipment manager](https://github.com/NiekSchoone/Black_Knight/blob/master/Assets/Scripts/Managers/EquipmentManager.cs)
 - [Equipment controller](https://github.com/NiekSchoone/Black_Knight/blob/master/Assets/Scripts/Controllers/EquipmentController.cs)

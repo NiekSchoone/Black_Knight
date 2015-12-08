@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+﻿//Writtem by Rob Verhoef
+using UnityEngine;
 using System.Collections;
 
 public class UniversalSpawner : MonoBehaviour
 {
-    [SerializeField] private Object[] _objects;
+    private Object[] _objects;
     private Object _chosenObject;
     private int _randomSpawntime;
     [SerializeField] private int _maxSpawnTime;

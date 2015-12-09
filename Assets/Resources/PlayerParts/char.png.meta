@@ -1,28 +1,28 @@
 fileFormatVersion: 2
 guid: 5b239f425c423d64391d5b1544497cb0
-timeCreated: 1449476298
+timeCreated: 1449668472
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: char_0
-    21300002: char_1
-    21300004: char_2
-    21300006: char_3
-    21300008: char_4
-    21300010: char_5
-    21300012: char_6
-    21300014: char_7
-    21300016: char_8
-    21300018: char_9
-    21300020: char_10
-    21300022: char_11
-    21300024: char_12
-    21300026: char_13
-    21300028: char_14
+    21300000: shoulder1
+    21300002: shoulder2
+    21300004: shoulder3
+    21300006: shield3
+    21300008: weapon3
+    21300010: shield1
+    21300012: weapon2
+    21300014: head1
+    21300016: head2
+    21300018: head3
+    21300020: weapon1
+    21300022: shield2
+    21300024: beard1
+    21300026: beard2
+    21300028: beard3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -44,7 +44,7 @@ TextureImporter:
   textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 2
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -65,7 +65,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: char_0
+    - name: shoulder1
       rect:
         serializedVersion: 2
         x: 67
@@ -75,7 +75,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_1
+    - name: shoulder2
       rect:
         serializedVersion: 2
         x: 322
@@ -85,27 +85,27 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_2
+    - name: shoulder3
       rect:
         serializedVersion: 2
-        x: 589
+        x: 588
         y: 699
         width: 220
         height: 162
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_3
+    - name: shield3
       rect:
         serializedVersion: 2
         x: 857
-        y: 558
+        y: 559
         width: 249
         height: 282
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_4
+    - name: weapon3
       rect:
         serializedVersion: 2
         x: 67
@@ -115,7 +115,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: .162224218, y: .545848489}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_5
+    - name: shield1
       rect:
         serializedVersion: 2
         x: 573
@@ -125,7 +125,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_6
+    - name: weapon2
       rect:
         serializedVersion: 2
         x: 96
@@ -135,7 +135,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: .280086875, y: .646183848}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_7
+    - name: head1
       rect:
         serializedVersion: 2
         x: 888
@@ -145,7 +145,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: .587124228, y: .940556586}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_8
+    - name: head2
       rect:
         serializedVersion: 2
         x: 1083
@@ -155,7 +155,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: .6337322, y: .826416731}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_9
+    - name: head3
       rect:
         serializedVersion: 2
         x: 1302
@@ -165,7 +165,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: .604191542, y: .688663065}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_10
+    - name: weapon1
       rect:
         serializedVersion: 2
         x: 84
@@ -175,7 +175,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: .198204249, y: .526826262}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_11
+    - name: shield2
       rect:
         serializedVersion: 2
         x: 574
@@ -185,7 +185,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_12
+    - name: beard1
       rect:
         serializedVersion: 2
         x: 896
@@ -195,7 +195,7 @@ TextureImporter:
       alignment: 9
       pivot: {x: .126513571, y: .906622946}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_13
+    - name: beard2
       rect:
         serializedVersion: 2
         x: 1109
@@ -205,10 +205,10 @@ TextureImporter:
       alignment: 9
       pivot: {x: .132012829, y: .90415293}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: char_14
+    - name: beard3
       rect:
         serializedVersion: 2
-        x: 1318
+        x: 1317
         y: 125
         width: 122
         height: 148

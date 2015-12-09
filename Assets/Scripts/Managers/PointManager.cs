@@ -9,7 +9,7 @@ public class PointManager : MonoBehaviour
     private Text _pointText;
     public static PointManager Instance;
 
-    void Awake()
+    void Awake ()
     {
         if (Instance)
         {
@@ -20,6 +20,11 @@ public class PointManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             Instance = this;
         }
+        _pointText = GameObject.Find("Total Points Text").GetComponent<Text>();
+    }
+
+    void OnLevelWasLoaded (int level)
+    {
         _pointText = GameObject.Find("Total Points Text").GetComponent<Text>();
     }
 

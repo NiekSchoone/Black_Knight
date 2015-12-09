@@ -19,6 +19,7 @@ public class GameOver : MonoBehaviour
 
     public void EndGame()
     {
+        Application.LoadLevel(0);
         menu.SetActive(true);
         replay.SetActive(true);
 

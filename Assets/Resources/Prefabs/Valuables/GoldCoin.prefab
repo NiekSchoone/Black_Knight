@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f1dfc0b1a09fa4198c6fbbe5759bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemValue: 3
+  itemValue: 300
   picker: PickupCollider
   pointManager: {fileID: 0}
 --- !u!114 &11422642
@@ -153,7 +153,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: itemValue
-      value: 3
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsTrigger

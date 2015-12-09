@@ -4,8 +4,8 @@ using System.Collections;
 
 public class UniversalSpawner : MonoBehaviour
 {
-    private Object[] _objects;
-    private Object _chosenObject;
+    private GameObject[] _objects;
+    private GameObject _chosenObject;
     private int _randomSpawntime;
     [SerializeField] private int _maxSpawnTime;
     [SerializeField] private string _loadPath;
@@ -13,7 +13,7 @@ public class UniversalSpawner : MonoBehaviour
 
     void Awake()
     {
-        _objects = Resources.LoadAll(_loadPath, typeof(Object));
+        _objects = Resources.LoadAll<GameObject>(_loadPath);
     }
 
     void FixedUpdate()
@@ -34,7 +34,7 @@ public class UniversalSpawner : MonoBehaviour
     {
         //A random object is chosen & spawned
         _chosenObject = _objects[Random.Range(0, _objects.Length)];
-        Instantiate(_chosenObject, transform.position, transform.rotation);
+        Instantiate(_chosenObject, new Vector2 (transform.position.x, _chosenObject.transform.position.y), _chosenObject.transform.rotation);
         _randomSpawntime = Random.Range(0, _maxSpawnTime);
         _spawning = false;
     }

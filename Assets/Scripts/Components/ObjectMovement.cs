@@ -5,7 +5,7 @@ public class ObjectMovement : MonoBehaviour
 {
     private float speed = -0.0535f;
 
-	void FixedUpdate ()
+	void Update ()
     {
         transform.Translate(speed,0,0);
 

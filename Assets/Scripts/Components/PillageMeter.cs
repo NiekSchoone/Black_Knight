@@ -17,7 +17,8 @@ public class PillageMeter : MonoBehaviour
 
     void Start()
     {
-        slider.value = slider.value;
+        slider.maxValue = slider.maxValue += _equipmentManager.TimerLevels * 10;
+        slider.value = slider.maxValue;
     }
 
 	void FixedUpdate ()
@@ -28,12 +29,12 @@ public class PillageMeter : MonoBehaviour
             gameOver.EndGame();
         }else
         {
-            slider.value -= 6 / _equipmentManager.TimerLevels * Time.deltaTime;
+            slider.value -= 5 * Time.deltaTime;
         }
     }
 
     public void AddToMeter()
     {
-        slider.value += 18;
+        slider.value += 10;
     }
 }

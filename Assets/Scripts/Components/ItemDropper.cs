@@ -13,8 +13,8 @@ public class ItemDropper : MonoBehaviour
     void Awake ()
     {
         _equipmentManager = GameObject.Find("Equipment Manager").GetComponent<EquipmentManager>();
-        dropModifier += _equipmentManager.WeaponLevels;
-        dropModifier += _equipmentManager.TimerLevels / 2;
+        dropModifier += _equipmentManager.WeaponLevels * 2;
+        dropModifier += _equipmentManager.TimerLevels;
     }
 
 	void Start ()
@@ -27,7 +27,7 @@ public class ItemDropper : MonoBehaviour
     public void DropPointObjects()
     {
         //Get a random amount of point objects
-        amountToDrop = Random.Range(1, 6) * dropModifier;
+        amountToDrop = Random.Range(1, 1 + dropModifier);
 
         for (int i = 0; i < amountToDrop; i++)
         {

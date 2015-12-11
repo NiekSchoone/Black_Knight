@@ -14,6 +14,7 @@ public class UniversalSpawner : MonoBehaviour
     void Awake()
     {
         _objects = Resources.LoadAll<GameObject>(_loadPath);
+        _randomSpawntime = Random.Range(0, _maxSpawnTime);
     }
 
     void FixedUpdate()

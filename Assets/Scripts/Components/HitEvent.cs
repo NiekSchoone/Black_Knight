@@ -6,31 +6,31 @@ public class HitEvent : MonoBehaviour
 {
     private ItemDropper drops;
     private PillageMeter meter;
+    private LifeManager life;
 
     private bool isPlayer;
     private bool isHit;
 
+    [SerializeField]
     private Animator animator;
     private Collider2D myCollider;
-
-    void Awake ()
-    {
-        meter = GameObject.Find("Pillage Meter").GetComponent<PillageMeter>();
-    }
 
     void Start()
     {
         isHit = false;
-        animator = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
 
         if (this.gameObject.tag == "Player")
         {
             isPlayer = true;
+            animator = GetComponentInChildren<Animator>();
+            life = GameObject.Find("LifeManager").GetComponent<LifeManager>();
         }else
         {
             isPlayer = false;
             drops = GetComponent<ItemDropper>();
+            animator = GetComponent<Animator>();
+            meter = GameObject.Find("Pillage Meter").GetComponent<PillageMeter>();
         }
     }
 
@@ -46,7 +46,8 @@ public class HitEvent : MonoBehaviour
             meter.AddToMeter();
         }else
         {
-
+            life.Lives--;
+            Debug.Log("I've been hit!");
         }
     }
 }

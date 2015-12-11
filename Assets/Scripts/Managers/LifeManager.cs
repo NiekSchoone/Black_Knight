@@ -18,7 +18,7 @@ public class LifeManager : MonoBehaviour
         _lives = _equipmentManager.HealthLevels;
     }
 
-    public int Points
+    public int Lives
     {
         //Gets and sets the lives value
         get

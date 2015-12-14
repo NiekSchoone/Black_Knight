@@ -708,7 +708,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02c15b22b51ca02479b60c5828bd78cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thingToHit: HitObject
+  thingToHit1: HitObject
+  thingToHit2: Enemy
 --- !u!114 &11498614
 MonoBehaviour:
   m_ObjectHideFlags: 1

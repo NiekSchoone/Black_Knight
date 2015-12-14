@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 413518}
   - 61: {fileID: 6123838}
   - 114: {fileID: 11427220}
+  - 114: {fileID: 11479736}
   m_Layer: 0
   m_Name: MyCollider
   m_TagString: Untagged
@@ -156,7 +157,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02c15b22b51ca02479b60c5828bd78cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thingToHit: Player
+  thingToHit1: Player
+  thingToHit2: 
+--- !u!114 &11479736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0b9c0e6cfa87a04c922544f2e3d8282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!212 &21285734
 SpriteRenderer:
   m_ObjectHideFlags: 1

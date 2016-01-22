@@ -39,6 +39,7 @@ public class EquipmentController : MonoBehaviour
         {
             if (_sprites[i].name == _currentUpgradeLevel)
             {
+                // JarJar
                _spriteRenderer.sprite = _sprites[i];
             }
         }

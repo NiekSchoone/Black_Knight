@@ -79,11 +79,13 @@
     <Compile Include="Assets\Scripts\Components\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Controllers\BackgroundScroller.cs" />
     <Compile Include="Assets\Scripts\Controllers\EquipmentController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\GradualSpawner.cs" />
     <Compile Include="Assets\Scripts\Controllers\UniversalSpawner.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\Managers\EquipmentManager.cs" />
     <Compile Include="Assets\Scripts\Managers\LifeManager.cs" />
     <Compile Include="Assets\Scripts\Managers\PointManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\RoundManager.cs" />
     <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
     <Compile Include="Assets\Scripts\Utilities\CameraShake.cs" />
     <Compile Include="Assets\Scripts\Utilities\ChangeScene.cs" />

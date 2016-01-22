@@ -23,7 +23,7 @@ public class PointManager : MonoBehaviour
         _pointText = GameObject.Find("Total Points Text").GetComponent<Text>();
     }
 
-    void OnLevelWasLoaded (int level)
+    void OnLevelWasLoaded ()
     {
         _pointText = GameObject.Find("Total Points Text").GetComponent<Text>();
     }
